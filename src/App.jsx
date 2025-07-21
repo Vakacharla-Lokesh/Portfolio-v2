@@ -8,10 +8,12 @@ import TechStack from "./sections/TechStack";
 import Testimonials from "./sections/Testimonials";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 const App = () => {
   return (
     <>
+      <Analytics />
       <NavBar />
       <Hero />
       <ShowcaseSection />
