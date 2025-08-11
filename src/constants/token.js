@@ -1,7 +1,11 @@
+import { jwtDecode } from "jwt-decode";
+
 const JWT_SECRET_KEY = import.meta.env.JWT_SECRET_KEY;
 const TOKEN_KEY = import.meta.env.TOKEN_KEY;
 
-import jwtDecode from "jwt-decode";
+export function setToken(userId, password) {
+  return localStorage.setItem({ userId, password });
+}
 
 export function getToken() {
   return localStorage.getItem(TOKEN_KEY);
