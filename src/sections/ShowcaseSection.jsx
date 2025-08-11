@@ -34,7 +34,7 @@ const ShowcaseSection = () => {
         }
       );
     });
-    
+
     gsap.fromTo(
       sectionRef.current,
       { opacity: 0 },
@@ -50,29 +50,30 @@ const ShowcaseSection = () => {
     >
       <div className="w-full">
         <div className="showcaselayout">
-          {/* LEFT */}
+          {/* Project 1 - GameHub */}
           <div
             className="first-project-wrapper"
             ref={project1Ref}
           >
             <div className="image-wrapper">
               <img
-                src="/images/project1.png"
-                alt="Ryde"
+                src="/images/gamehub.png"
+                alt="GameHub"
               />
             </div>
             <div className="text-content">
               <h2>
-                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                called Ryde.
+                GameHub — Play your favourite games all in one place with this
+                fullstack gaming platform.
               </h2>
               <p className="text-white-50 md:text-xl">
-                An app built with React Native, etc.
+                Built with modern web technologies to bring multiple games into
+                a single immersive experience.
               </p>
             </div>
           </div>
 
-          {/* RIGHT */}
+          {/* Project 2 - Store */}
           <div className="project-list-wrapper overflow-hidden">
             <div
               className="project"
@@ -80,24 +81,25 @@ const ShowcaseSection = () => {
             >
               <div className="image-wrapper bg-[#ffefdb]">
                 <img
-                  src="/images/project2.png"
-                  alt="Library Management Platform"
+                  src="/images/store.png"
+                  alt="Cloud Storage Platform"
                 />
               </div>
-              <h2> Library Management Platform</h2>
+              <h2>Store — A cloud-based storage solution</h2>
             </div>
 
+            {/* Project 3 - Blog Page */}
             <div
               className="project"
               ref={project3Ref}
             >
               <div className="image-wrapper bg-[#ffe7eb]">
                 <img
-                  src="/images/project3.png"
-                  alt="Library Management Platform"
+                  src="/images/blog.png"
+                  alt="Blog Page"
                 />
               </div>
-              <h2>YC directory</h2>
+              <h2>Blog Page — Share your thoughts and ideas with the world</h2>
             </div>
           </div>
         </div>

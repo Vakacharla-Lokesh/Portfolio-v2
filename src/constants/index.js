@@ -148,6 +148,20 @@ const techStackIcons = [
 const expCards = [
   {
     review:
+      "At Collegepur, Lokesh showcased his frontend expertise as a Next.js intern, delivering high-quality user interfaces across multiple projects. His adaptability and attention to design earned him recognition as Intern of the Week.",
+    imgPath: "/images/exp2.png",
+    logoPath: "/images/collegepur-logo.png",
+    title: "Next.js Intern",
+    date: "Jul 2025 - Present",
+    responsibilities: [
+      "Developed and optimized responsive frontend features for three different projects.",
+      "Collaborated with designers and backend developers to ensure seamless UI/UX experiences.",
+      "Implemented reusable components and maintained clean, scalable codebases.",
+      "Recognized as 'Intern of the Week' for outstanding performance and dedication.",
+    ],
+  },
+  {
+    review:
       "Lokesh demonstrated exceptional full-stack development skills during his internship, building a complete e-commerce platform with impressive attention to both frontend and backend details.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.jpg",

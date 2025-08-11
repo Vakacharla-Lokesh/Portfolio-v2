@@ -29,7 +29,7 @@ const NavBar = () => {
           href="#hero"
           className="logo"
         >
-          Adrian JSM
+          Vakacharla Lokesh
         </a>
 
         <nav className="desktop">

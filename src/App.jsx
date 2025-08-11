@@ -9,21 +9,39 @@ import Testimonials from "./sections/Testimonials";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import { Analytics } from "@vercel/analytics/react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import AdminLogin from "./pages/AdminLogin";
 
 const App = () => {
   return (
     <>
       <Analytics />
-      <NavBar />
-      <Hero />
-      <ShowcaseSection />
-      <LogoSection />
-      <FeatureCards />
-      <ExperienceSection />
-      <TechStack />
-      <Testimonials />
-      <Contact />
-      <Footer />
+      <Router>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <NavBar />
+                <Hero />
+                <ShowcaseSection />
+                <LogoSection />
+                <FeatureCards />
+                <ExperienceSection />
+                <TechStack />
+                <Testimonials />
+                <Contact />
+                <Footer />
+              </>
+            }
+          />
+
+          <Route
+            path="/admin/login"
+            element={<AdminLogin />}
+          />
+        </Routes>
+      </Router>
     </>
   );
 };
